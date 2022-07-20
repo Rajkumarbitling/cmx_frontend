@@ -1,3 +1,5 @@
+@import-normalize;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 600 !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'roboto',
     monospace;
+}
+
+@font-face {
+  font-family: "gotham";
+  src: url("fonts/Gotham-Black.ttf")
+}
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto-Regular.ttf")
+}
+
+:root {
+  --primary-color: #8c2131;
+  --dark-gray: #7d7772;
+  --gold: #f6c701;
+}
+
+.family-gotham {
+  font-family: "gotham",
+    sans-serif;
+}
+
+.family-roboto {
+  font-family: "roboto",
+    sans-serif;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
